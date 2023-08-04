@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resort Payment Form</title>
+</head>
+<body>
+    <h1>Welcome, Treyvon Mays {{ first_name }} {{ last_name }}</h1>
+    <form method="POST">
+        <label for="phone_number">Phone Number:</label>
+        <input type="text" name="phone_number" required><br>
+
+        <label for="payment_type">Payment Type:</label>
+        <select name="payment_type" required>
+            <option value="cash">Cash</option>
+            <option value="credit">Credit</option>
+            <option value="check">Check</option>
+        </select><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
